@@ -1,0 +1,23 @@
+{
+  "name": "sorting_suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoic-plus/sorting_suite.git"
+  },
+  "author": "Ricardo Ledesma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stoic-plus/sorting_suite/issues"
+  },
+  "homepage": "https://github.com/stoic-plus/sorting_suite#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
