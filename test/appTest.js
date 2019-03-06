@@ -11,9 +11,10 @@ describe('App', function(){
   });
   describe('initialSort()', function(){
     it('should sort an array given array and pivot index', function(){
-      original = [9, 8, 5, 6];
-      sorted = app.initialSort(original, 3);
-      assert.deepEqual(sorted, [5, 6, 9, 8]);
+      const original = [9, 8, 5, 6];
+      const { less, more } = app.initialSort(original, 3);
+      assert.deepEqual(less, [5]);
+      assert.deepEqual(more, [9, 8]);
     });
   });
 })

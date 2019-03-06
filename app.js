@@ -3,15 +3,15 @@ module.exports = {
     return Math.floor(Math.random() * arrayLength);
   },
   initialSort: function(array, pivot) {
-    const lessThan = [];
-    const greaterThan = [];
+    const less = [];
+    const more = [];
     array.forEach((el) => {
       if (el < array[pivot]) {
-        lessThan.push(el);
+        less.push(el);
       } else if (el > array[pivot]) {
-        greaterThan.push(el);
+        more.push(el);
       }
     });
-    return [...lessThan, array[pivot], ...greaterThan];
+    return {less, more,}
   }
 }
