@@ -13,7 +13,7 @@ describe('App', function(){
     it('should sort an array given array and pivot index', function(){
       original = [9, 8, 5, 6];
       sorted = app.initialSort(original, 3);
-      assert.equal(sorted, [5, 6, 9, 8]);
+      assert.deepEqual(sorted, [5, 6, 9, 8]);
     });
   });
 })
