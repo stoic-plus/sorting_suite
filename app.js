@@ -1,17 +1,14 @@
 module.exports = {
-  randomIndex: function(arrayLength) {
-    return Math.floor(Math.random() * arrayLength);
-  },
-  initialSort: function(array, pivot) {
-    const less = [];
-    const more = [];
-    array.forEach((el) => {
-      if (el < array[pivot]) {
-        less.push(el);
-      } else if (el > array[pivot]) {
-        more.push(el);
+  sort: function(unsorted) {
+    let swap = null;
+    unsorted.forEach((el, i) => {
+      if (unsorted[i] > unsorted[i+1]) {
+        swap = unsorted[i];
+        unsorted[i] = unsorted[i+1];
+        unsorted[i+1] = swap;
       }
+      return unsorted;
     });
-    return {less, more,}
+    return unsorted;
   }
 }
